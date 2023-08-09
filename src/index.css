@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/assets/fonts/Montserrat-Thin.woff2") format("woff2"),
+    url("../public/assets/fonts/Montserrat-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto";
+  src: url("../public/assets/fonts/NotoSerif-Regular.woff2") format("woff2"),
+    url("../public/assets/fonts/NotoSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant-light";
+  src: url("../public/assets/fonts/CormorantInfant-Light.woff2") format("woff2"),
+    url("../public/assets/fonts/CormorantInfant-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Crimson-Regular";
+  src: url("../public/assets/fonts/CrimsonText-Regular.woff2") format("woff2"),
+    url("../public/assets/fonts/CrimsonText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Crimson-Regular-I";
+  src: url("../public/assets/fonts/CrimsonText-Italic.woff2") format("woff2"),
+    url("../public/assets/fonts/CrimsonText-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Crimson-Semibold";
+  src: url("../public/assets/fonts/CrimsonText-SemiBold.woff2") format("woff2"),
+    url("../public/assets/fonts/CrimsonText-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Crimson-Semibold-I";
+  src: url("../public/assets/fonts/CrimsonText-SemiBoldItalic.woff2")
+      format("woff2"),
+    url("../public/assets/fonts/CrimsonText-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@layer base {
+  body {
+    @apply leading-normal;
+  }
+}
+
+.bd {
+  border: 1px solid red;
+}
