@@ -13,12 +13,12 @@ const Home = () => {
       // Apply zoom effect based on scroll position
       const scaleFactor = 1 + scrollPercentage * 0.2; // Adjust the zoom speed
       image.style.transform = `scale(${scaleFactor})`;
-      console.log(image, scrollHeight)
+      console.log(image, scrollHeight);
     });
   }, []);
 
   return (
-    <div className="max-w-[1512px] mx-auto bg-white">
+    <div className="max-w-[1512px] mx-auto bg-white hidden sm:block">
       <div className="relative overflow-hidden">
         <img
           src="./assets/images/1.png"
@@ -31,8 +31,24 @@ const Home = () => {
             WINTER SHOW <span className="block">2023</span>
           </h1>
         </div>
+        <svg
+          className="absolute left-1/2 -translate-x-1/2 bottom-[73px]"
+          width="70"
+          height="70"
+          viewBox="0 0 70 70"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M35 58.3332V11.6665M35 58.3332L14.5833 37.9165M35 58.3332L55.4167 37.9165"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <rect x="0.5" y="0.5" width="69" height="69" stroke="black" />
+        </svg>
       </div>
-
       <div className="relative">
         <div className="grid grid-cols-2 h-screen sticky top-0">
           <img src="./assets/images/2.png" className="w-full h-screen" alt="" />
